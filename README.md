@@ -42,21 +42,12 @@ The primary dataset was sourced from Kaggle and curated specifically for influen
 ---
 
 ## 🛠️ Multi-Layer Analytical Framework
-              ┌─────────────────────────────────────────┐
-              │ Multi-Layer Fake Influencer Detection   │
-              └────────────────────┬────────────────────┘
-                                   │
-  ┌────────────────────┬───────────┴───────────┬────────────────────┐
-  ▼                    ▼                       ▼                    ▼
-┌───────────┐        ┌───────────┐           ┌───────────┐        ┌───────────┐
-│Text Layer │        │Action     │           │Network    │        │Hyperlink  │
-│           │        │Layer      │           │Layer      │        │Layer      │
-└─────┬─────┘        └─────┬─────┘           └─────┬─────┘        └─────┬─────┘
-      │                    │                       │                    │
-• Sentiment          • Daily Post            • Follower/          • Bio Links
-• Spam Rate            Frequency               Following          • Link Security
-• WordCloud          • Interaction             Ratio                Analysis
-Patterns
+| Layer | Focus / Metrics | Evaluated Features |
+| :--- | :--- | :--- |
+| **📝 Text Layer** | Sentiment, Spam Rate, WordCloud | Comment Sentiment, Spam Rate, Text Patterns |
+| **⚡ Action Layer** | Posting Activity & Engagement | Daily Post Frequency, Interaction Patterns |
+| **🌐 Network Layer** | Account Relationships | Follower/Following Ratio |
+| **🔗 Hyperlink Layer** | Bio Links & Security | Bio Links, Link Security Analysis |
 
 
 ### 1. 📝 Text Layer Analysis
